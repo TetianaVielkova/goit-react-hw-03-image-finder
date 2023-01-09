@@ -23,10 +23,11 @@ state = {
 async componentDidUpdate(prevProps, prevState){
     const prevName = prevProps.imageName;
     const newName = this.props.imageName;
-    const { page} = this.state;
+
+    const {page} = this.state;
 
     if (prevName !== newName) {
-        this.setState({ images: [], page: 1 })
+        this.setState({ images: [] })
     }
 
     if (prevName !== newName || prevState.page !== page) {

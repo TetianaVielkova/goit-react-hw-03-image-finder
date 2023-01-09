@@ -10,12 +10,12 @@ export class App extends Component{
 
   state={
     imageName: '',
+    
   }
 
 
   handleSearch = imageName => {
-    this.setState({ imageName });
-    // console.log(imageName);
+    this.setState({ imageName});
   };
 
 
